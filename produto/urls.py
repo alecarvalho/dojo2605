@@ -1,0 +1,11 @@
+from django.contrib import admin
+from django.urls import path
+from . import views
+
+urlpatterns = [
+    path('', views.index),
+    path('products', views.products),
+    path('form_products', views.form_products),
+    path('categories', views.categories),
+    path('form_categories', views.form_categories),
+]
